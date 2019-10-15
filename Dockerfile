@@ -1,7 +1,6 @@
 FROM alpine:3.10
 
-RUN apk update && \
-  apk add \
+RUN apk add --update --no-cache \
     openjdk8 \
     xmlstarlet \
     jq \
